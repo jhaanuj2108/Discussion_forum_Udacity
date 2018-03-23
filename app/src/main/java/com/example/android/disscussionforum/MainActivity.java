@@ -1,33 +1,39 @@
 package com.example.android.disscussionforum;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
-    private WebView mWebView;
+    private Button mButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        mWebView = findViewById(R.id.myWebView);
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setAppCacheEnabled(true);
-        mWebView.loadUrl("https://discussions.udacity.com/login");
-        mWebView.setWebViewClient(new WebViewClient());
+
+        mButton = findViewById(R.id.button);
+
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (getSupportFragmentManager().findFragmentById(android.R.id.content) == null)
+                    getSupportFragmentManager().beginTransaction().add(android.R.id.content, new WebFragment()).commit();
+
+            }
+        });
     }
 
-    @Override
-    public void onBackPressed() {
-        if (mWebView.canGoBack()) {
-            mWebView.goBack();
-        } else {
-            super.onBackPressed();
-        }
-    }
 }
