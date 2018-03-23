@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAppCacheEnabled(true);
-        mWebView.loadUrl("https://www.discussions.udacity.com");
+        mWebView.loadUrl("https://discussions.udacity.com/login");
         mWebView.setWebViewClient(new WebViewClient());
     }
 
