@@ -18,6 +18,7 @@ import com.thefinestartist.finestwebview.FinestWebView;
 public class WebFragment extends Fragment {
 
     private String url="https://discussions.udacity.com/login";
+    public static final String USER_AGENT_FAKE = "@strings/fake_user_for_testing";
 
 
 
