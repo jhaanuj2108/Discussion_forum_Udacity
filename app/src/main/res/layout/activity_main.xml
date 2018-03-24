@@ -14,6 +14,7 @@
         android:layout_marginTop="450dp"
         android:text="@string/start_learning"
         android:background="@drawable/btn_bg"
+        android:onClick="start_learn_btn_functiion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

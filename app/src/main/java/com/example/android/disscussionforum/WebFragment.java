@@ -17,7 +17,7 @@ import com.thefinestartist.finestwebview.FinestWebView;
 
 public class WebFragment extends Fragment {
 
-    private String url="https://discussions.udacity.com";
+    private String url="https://discussions.udacity.com/login";
 
 
 
