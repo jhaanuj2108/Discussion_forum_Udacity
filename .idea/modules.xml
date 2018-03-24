@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Discussion_forum.iml" filepath="$PROJECT_DIR$/Discussion_forum.iml" />
+      <module fileurl="file://C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\Discussion_forum.iml" filepath="C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\Discussion_forum.iml" />
       <module fileurl="file://$PROJECT_DIR$/Discussion_forum_Udacity.iml" filepath="$PROJECT_DIR$/Discussion_forum_Udacity.iml" />
+      <module fileurl="file://C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\Discussion_forum_Udacity.iml" filepath="C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\Discussion_forum_Udacity.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\app\app.iml" filepath="C:\Users\JithinJude\Desktop\Discussion_forum_Udacity\Discussion_forum_Udacity\app\app.iml" />
     </modules>
   </component>
 </project>
