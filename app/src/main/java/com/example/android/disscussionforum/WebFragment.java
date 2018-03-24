@@ -34,6 +34,9 @@ public class WebFragment extends Fragment {
                 .urlColorRes(R.color.bluePrimaryLight)
                 .iconDefaultColorRes(R.color.finestWhite)
                 .progressBarColorRes(R.color.finestWhite)
+                .showProgressBar(true)
+                .progressBarHeight(4)
+                .webViewUserAgentString(USER_AGENT_FAKE)               //setting user agent
                 .stringResCopiedToClipboard(R.string.copied_to_clipboard)
                 .stringResCopiedToClipboard(R.string.copied_to_clipboard)
                 .stringResCopiedToClipboard(R.string.copied_to_clipboard)

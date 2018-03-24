@@ -29,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void delayRun() {
-        Intent intent = new Intent(this,WebViewActivity.class);
-        startActivity(intent);
+        if (getSupportFragmentManager().findFragmentById(android.R.id.content) == null)
+            getSupportFragmentManager().beginTransaction().add(android.R.id.content, new WebFragment()).commit();
+
     }
 
     public void start_learn_btn_functiion(View view) {
