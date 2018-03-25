@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void delayRun() {
-        if (getSupportFragmentManager().findFragmentById(android.R.id.content) == null)
             getSupportFragmentManager().beginTransaction().add(android.R.id.content, new WebFragment()).commit();
 
     }
