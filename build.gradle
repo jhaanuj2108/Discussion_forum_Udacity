@@ -22,6 +22,8 @@ allprojects {
         maven {
             url 'https://dl.bintray.com/spark/maven'
         }
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
     }
 }
 
